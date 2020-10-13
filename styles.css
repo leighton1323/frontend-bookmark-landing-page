@@ -1,0 +1,249 @@
+:root{
+--softBlue: hsl(231, 69%, 60%);
+--softRed: hsl(0, 94%, 66%);
+--grayBlue: hsl(229, 8%, 60%);
+--darkBlue: hsl(229, 31%, 21%);
+}
+html{
+    min-width: 375px;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.125rem;
+}
+p{
+    color: var(--grayBlue);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--darkBlue);
+}
+h1{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1.125rem;
+    font-weight: 400;  
+}
+section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+footer{
+    padding: 1.75%;
+    background-color: var(--darkBlue);
+}
+.nav-item{
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: var(--softRed);
+}
+.row{
+    text-align: center;
+}
+.btn{
+    box-shadow: 0px 3px 5px 0px var(--grayBlue);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: .85rem;
+    padding: .8rem 1rem;
+    border-width: 2px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: var(--softRed);
+    border-color: var(--softRed);
+}
+.btn-danger:hover {
+    color: var(--softRed);
+    background-color: #fff;
+    border-color: var(--softRed);
+}
+.btn-primary{
+    color: #ffffff;
+    background-color: var(--softBlue);
+    border-color: var(--softBlue);
+}
+.btn-primary:hover{
+    color: var(--softBlue);
+    background-color: #fff;
+    border-color: var(--softBlue);
+    border-width: 2px;
+}
+.btn-light{
+    color: var(--darkBlue);
+    background-color: rgb(246,246,248);
+    border-color: rgb(246,246,248);
+}
+.btn-light:hover{
+    color: var(--darkBlue);
+    background-color: #fff;
+    border-color: var(--grayBlue);
+}
+#mainHeader{
+    position: relative;
+}
+#mainHeader .bubble{
+    height: 350px;
+    width: 45%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    float:left;
+    background-color: var(--softBlue);
+    z-index: -1;
+    border-top-left-radius: 175px;
+    border-bottom-left-radius: 175px;
+}
+#mainHeader .row{
+    text-align: left;
+}
+#features{
+    position: relative;
+}
+#features .featureTabs{
+    min-height: 450px;
+}
+
+#features .nav-tabs .nav-link.active {
+    color: var(--darkBlue);
+    background-color: #ffffff;
+    border: none;
+    border-bottom: solid var(--softRed) 3px;
+}
+#features .nav-tabs .nav-link.active:focus-within{
+    color: var(--darkBlue);
+    background-color: #ffffff;
+    border: none;
+    border-bottom: solid var(--softRed) 3px;
+}
+#features .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none;
+}
+#features .nav-item a{
+    color: var(--grayBlue);
+}
+#features .nav-item a:hover{
+    color: var(--softRed);
+}
+#features .bubble{
+    height: 350px;
+    width: 45%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    float:left;
+    background-color: var(--softBlue);
+    z-index: -1;
+    border-top-right-radius: 175px;
+    border-bottom-right-radius: 175px;
+}
+.extensions{
+    min-height: 450px;
+}
+.card{
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 15px 0px rgb(235,237,250);
+}
+.card-img-top{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.card-text{
+    font-size: .9rem;
+}
+.card-footer {
+    padding: 1.5rem 1.25rem;
+    background-color: #ffffff;
+    border-top: 3px dotted var(--grayBlue);
+}
+.accordion .card{
+    box-shadow: none;
+    border-radius: 0px;
+}
+.accordion .card-header{
+    background-color: #ffffff;
+    border: none;
+    border-top: solid var(--grayBlue) 2px;
+    padding: 1.3rem 1.3rem 1.3rem 0rem;
+}
+.accordionButton:hover{
+    color: var(--softRed);
+}
+.accordion h2{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--darkBlue);
+}
+.accordion img{
+    line-height: 1.125.rem;
+}
+.accordion .card-body{
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 400;  
+    color: var(--grayBlue);
+    padding: 1.3rem 1.3rem 1.3rem 0rem;
+}
+#bottomCard{
+    border-bottom: solid var(--grayBlue) 2px;
+}
+#contactUs{
+    background-color: var(--softBlue);
+}
+#contactUs .form-control{
+    font-size: .85rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    padding: 1rem 1rem;
+    height: calc(1.125rem + 2rem);
+}
+.bg-dark{
+    background-color: var(--darkBlue);
+}
+footer a{
+    color: white;
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+footer a:hover{
+    color: var(--softRed);
+    fill: var(--softRed);
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+footer .nav-link svg path:hover{
+    color: var(--softRed);
+    fill: var(--softRed);
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#questions svg {
+    
+
+}
+#questions .accordionButton:hover svg{
+    transform: rotate(180deg);
+    stroke: var(--softRed);
+}
+#questions .accordionButton svg{
+    transform: rotate(0deg);
+    stroke: var(--softRed);
+}
+/* #questions svg path:hover{
+    stroke: var(--softRed);
+} */
